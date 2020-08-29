@@ -1,0 +1,28 @@
+.mainBlock{
+  height: 100vh;
+  background-color: #dcb7c2;
+}
+
+.mainBlockContent{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.welcomeBlock{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+}
+
+.welcome{
+  width: 300px;
+  background-color: azure;
+}
+.photo{
+  width: 300px;
+  height: 400px;
+  background-color: azure;
+}
