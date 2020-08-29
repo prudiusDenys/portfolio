@@ -1,0 +1,40 @@
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+  background-color: #8d8f8e;
+}
+
+.image{
+  position: relative;
+  width: 100%;
+}
+.image img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.showProject{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #c5aca6;
+}
+.showProject h3{
+  margin: 0;
+}
+
+.title{
+  background-color: #7cdc58;
+  margin-bottom: 20px;
+}
+.description{
+  background-color: #7cdc58;
+}
+
+.title h3 {
+  margin: 0;
+}

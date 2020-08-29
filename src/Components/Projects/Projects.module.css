@@ -1,0 +1,18 @@
+.projects {
+  height: 100vh;
+  background-color: #8b9ddc;
+}
+
+.projectsContent {
+  text-align: center;
+}
+
+.title {
+  background-color: #c0ad91;
+}
+
+.projectsBlock {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+}

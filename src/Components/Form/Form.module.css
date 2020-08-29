@@ -1,0 +1,38 @@
+.form{
+  background-color: #c59a9a;
+}
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  background-color: #c0ad91;
+}
+
+.formBox {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.formBox input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.formBox textarea {
+  padding: 10px;
+  height: 100px;
+  outline: none;
+  border: none;
+}
+.send{
+  margin-bottom: 20px;
+}

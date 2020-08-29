@@ -1,0 +1,20 @@
+.footer{
+  background-color: #bcbab9;
+}
+.footerContent{
+  text-align: center;
+}
+.socialLinks{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px solid;
+}
+.title h2{
+  background-color: #7cdc58;
+}
+
+.copyright{
+  background-color: #7cdc58;
+}

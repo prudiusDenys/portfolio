@@ -34,7 +34,7 @@ export const Skills = () => {
 		},
 	]
 
-	let skill = skills.map(s => <Skill key={s.id} icon={s.icon} title={s.title} description={s.description}/>)
+	const skill = skills.map(s => <Skill key={s.id} icon={s.icon} title={s.title} description={s.description}/>)
 
 	return (
 		<div className={classes.skills}>
