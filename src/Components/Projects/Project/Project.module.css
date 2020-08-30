@@ -1,17 +1,20 @@
+.project{
+  flex: 0 1 33.333%;
+  padding: 0 5px;
+}
 .projectContent {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 100%;
   background-color: #8d8f8e;
 }
 
 .image{
   position: relative;
-  width: 100%;
+  padding: 0 0 58% 0;
+  overflow: hidden;
 }
 .image img{
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -37,4 +40,23 @@
 
 .title h3 {
   margin: 0;
+}
+
+@media (max-width: 1020px) {
+  .showProject{
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .project{
+    flex: 0 1 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project{
+    flex: 0 1 100%;
+    margin-bottom: 10px;
+  }
 }

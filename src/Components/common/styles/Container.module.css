@@ -5,3 +5,8 @@
   padding: 0 10px;
   border: 1px solid;
 }
+@media (max-width: 768px) {
+  .container{
+    max-width: 90%;
+  }
+}

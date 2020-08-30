@@ -14,7 +14,9 @@ export const MainBlock = () => {
 							<h1>I am Denis Prudius</h1>
 							<p>FrontEnd Developer</p>
 						</div>
-						<div className={classes.photo}></div>
+						<div className={classes.photo}>
+							<img src="https://aforisticando.com/wp-content/uploads/2019/11/steve-jobs-frasi-aforisticando.jpg" alt=""/>
+						</div>
 					</div>
 				</div>
 			</div>

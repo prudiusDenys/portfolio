@@ -4,6 +4,7 @@ import styleContainer from '../common/styles/Container.module.css'
 
 
 export const Footer = () => {
+
 	return (
 		<div className={classes.footer}>
 			<div className={styleContainer.container}>
@@ -24,7 +25,6 @@ export const Footer = () => {
 					</div>
 				</div>
 			</div>
-
 		</div>
 	)
 }

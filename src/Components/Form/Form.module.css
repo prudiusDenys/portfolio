@@ -13,7 +13,8 @@
 }
 
 .formBox {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: 1px solid;

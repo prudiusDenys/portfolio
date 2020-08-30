@@ -1,5 +1,5 @@
 .projects {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #8b9ddc;
 }
 
@@ -13,6 +13,14 @@
 
 .projectsBlock {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  height: 100%;
   border: 1px solid;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    min-height: 70vh;
+  }
 }

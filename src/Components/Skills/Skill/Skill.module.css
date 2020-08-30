@@ -1,8 +1,9 @@
+.skill {
+  flex: 0 1 33.333%;
+  padding: 0 5px;
+}
+
 .skillContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
   height: 100%;
   background-color: #8d8f8e;
 }
@@ -11,8 +12,22 @@
   width: 60px;
   height: 60px;
   background-color: #dcb7c2;
+  margin: 0 auto;
 }
 
 .title h3 {
   margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .skill {
+    flex: 0 1 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    flex: 0 1 100%;
+  }
 }
