@@ -2,10 +2,11 @@ import React from "react";
 import classes from "./Skills.module.css";
 import styleContainer from '../common/styles/Container.module.css'
 import {Skill} from "./Skill/Skill";
+import {v1} from 'uuid';
 
 
 type SkillsType = {
-	id: number
+	id: string
 	icon: string
 	title: string
 	description: string
@@ -15,19 +16,19 @@ export const Skills = () => {
 
 	const skills: Array<SkillsType> = [
 		{
-			id: 1,
+			id: v1(),
 			icon: 'ReactIcon',
 			title: 'React',
 			description: '\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda aut culpa deleniti deserunt facere harum iure.\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda aut culpa deleniti deserunt facere harum iure.'
 		},
 		{
-			id: 2,
+			id: v1(),
 			icon: 'JSIcon',
 			title: 'JS',
 			description: '\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda aut culpa deleniti deserunt facere harum iure.'
 		},
 		{
-			id: 3,
+			id: v1(),
 			icon: 'CSSIcon',
 			title: 'CSS',
 			description: '\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda aut culpa deleniti deserunt facere harum iure.'
