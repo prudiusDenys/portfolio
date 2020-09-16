@@ -1,22 +1,42 @@
 import React from "react";
-import classes from "./MainBlock.module.css";
-import styleContainer from '../common/styles/Container.module.css'
+import classes from "./MainBlock.module.scss";
+import myPhoto from '../../assets/images/myPhoto.jpg'
+import {Header} from "../Header/Header";
 
+const myPhotoStyles = {
+	backgroundImage: `url(${myPhoto})`
+}
 
 export const MainBlock = () => {
 	return (
 		<div className={classes.mainBlock}>
-			<div className={styleContainer.container}>
-				<div className={classes.mainBlockContent}>
-					<div className={classes.welcomeBlock}>
-						<div className={classes.welcome}>
-							<span>Hi There</span>
-							<h1>I am Denis Prudius</h1>
-							<p>FrontEnd Developer</p>
+			<div className={classes.mainBlockContent}>
+				<div className={classes.colorBlock}></div>
+				<div className={classes.welcomeBlock}>
+
+					<div className={classes.photo} style={myPhotoStyles}></div>
+					<div className={classes.aboutMe}>
+						<div className={classes.greeting}>
+							<h6>Hi There !</h6>
 						</div>
-						<div className={classes.photo}>
-							<img src="https://aforisticando.com/wp-content/uploads/2019/11/steve-jobs-frasi-aforisticando.jpg" alt=""/>
+						<div className={classes.me}>
+							<h1>I am <span>Denis Prudius</span></h1>
 						</div>
+						<div>
+							<div className={classes.aboutMeInfo}>
+								<p>Frontend Developer. I am constantly developing and studying new technologies in IT. Currently I
+									specialize in React, but also open to other suggestions. Work experience half a year on freelance. I
+									am
+									looking for a job in a dynamically developing company with interesting tasks and career opportunities.
+									I will be glad to mutual cooperation.</p>
+							</div>
+						</div>
+						<div className={classes.moreAboutMe}>
+							<a href="#">MORE ABOUT ME</a>
+						</div>
+					</div>
+					<div>
+						<Header/>
 					</div>
 				</div>
 			</div>

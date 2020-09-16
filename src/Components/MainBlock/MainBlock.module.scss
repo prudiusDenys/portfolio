@@ -1,0 +1,120 @@
+.mainBlockContent {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+  .colorBlock {
+    background-color: #f72b1c;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+  }
+
+  .welcomeBlock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid;
+
+    .photo {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+      height: calc(100vh - 60px);
+      border-radius: 15px;
+      flex: 0 0 33.333%;
+    }
+
+    .aboutMe {
+      flex: 0 0 33.333%;
+
+      .greeting h6 {
+        color: #777;
+        font-size: 22px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .me {
+        h1 {
+          font-family: 'Poppins', sans-serif;;
+          font-size: 45px;
+          line-height: 45px;
+          font-weight: 700;
+          margin: 18px 0 10px;
+          color: #666;
+
+          span {
+            color: #f72b1c;
+          }
+        }
+      }
+
+      &Info {
+        margin: 10px 0 23px;
+        font-size: 16px;
+        line-height: 32px;
+        font-family: 'Open Sans', sans-serif;
+        color: #666;
+      }
+
+      .moreAboutMe {
+        background-color: #f72b1c;
+        border-radius: 26px;
+        height: 46px;
+        outline: none;
+        overflow: hidden;
+        display: inline-block;
+
+        a {
+          padding: 0 40px;
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+          font-weight: 500;
+          line-height: 46px;
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: .5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 940px) {
+  .welcomeBlock {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .welcome {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBlock, .mainBlockContent {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .welcome h1 {
+    font-size: 18px;
+  }
+}
