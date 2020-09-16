@@ -1,7 +1,4 @@
 .list {
-  transition-delay: .1s;
-  transition: all .6s;
-  display: block;
 
   li {
     position: relative;
@@ -27,6 +24,14 @@
         color: #666;
         transition: .3s;
       }
+    }
+  }
+
+  .active {
+    background: #f72b1c;
+
+    .icon {
+      color: #fff;
     }
   }
 }
