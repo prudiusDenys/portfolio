@@ -1,16 +1,18 @@
 import React from "react";
 import classes from "./About.module.scss";
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../../common/styles/container/Container.module.scss'
 import {Button} from "../../common/components/Button/Button";
 import {Title} from "../../common/components/Title/Title";
 import {Separator} from "../../common/components/Separator/Separator";
 import {CustomTitle} from "../../common/components/CustomTitle/CustomTitle";
 import {Skills} from "./Skills/Skills";
+import {Header} from "../Header/Header";
 
 
 export const About = () => {
 	return (
 		<div className={classes.about}>
+			<Header/>
 			<Title title={'ABOUT'} titleSpan={'ME'} titleBg={'RESUME'}/>
 			<div className={styleContainer.container}>
 				<div className={classes.aboutContent}>
@@ -85,6 +87,7 @@ export const About = () => {
 					<CustomTitle customTitle={'My Skills'}/>
 					<Skills/>
 					<Separator/>
+					<CustomTitle customTitle={'EXPERIENCE & EDUCATION'}/>
 				</div>
 			</div>
 		</div>

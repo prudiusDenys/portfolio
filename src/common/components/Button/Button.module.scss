@@ -1,5 +1,7 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
 .btn {
-  background-color: #f72b1c;
+  background-color: $primaryColor;
   border-radius: 26px;
   height: 46px;
   outline: none;
@@ -8,11 +10,9 @@
 
   a {
     padding: 0 40px;
-    font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-weight: 500;
+    @include font(15px,500);
     line-height: 46px;
-    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: .5px;
   }

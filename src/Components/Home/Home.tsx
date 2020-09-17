@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./MainBlock.module.scss";
+import classes from "./Home.module.scss";
 import myPhoto from '../../assets/images/myPhoto.jpg'
 import {Header} from "../Header/Header";
 import {Button} from "../../common/components/Button/Button";
@@ -8,7 +8,7 @@ const myPhotoStyles = {
 	backgroundImage: `url(${myPhoto})`
 }
 
-export const MainBlock = () => {
+export const Home = () => {
 	return (
 		<div className={classes.mainBlock}>
 			<div className={classes.mainBlockContent}>

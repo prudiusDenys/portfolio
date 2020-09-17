@@ -1,7 +1,8 @@
-.aboutContent {
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
 
-}
-.personalWrapper{
+
+.personalWrapper {
   display: flex;
   margin: 0 -15px;
 }
@@ -12,8 +13,7 @@
 
   .personalInfo h3 {
     padding-bottom: 22px;
-    font-size: 26px;
-    font-weight: 600;
+    @include font(26px, 600);
     margin: 0;
   }
 
@@ -27,7 +27,7 @@
       padding: 0 15px;
 
       ul {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $secondFont;
 
         li {
           padding-bottom: 20px;
@@ -63,44 +63,43 @@
       border: 1px solid #ddd;
       padding: 20px 30px 25px 40px;
 
-      h3{
-        display: inline-block;
-        color: #f72b1c;
+      h3 {
         position: relative;
+        display: inline-block;
+        color: $primaryColor;
+        @include font(50px, 700);
         margin: 0;
-        font-size: 50px;
-        font-weight: 700;
         line-height: 1.2;
-        &::after{
+
+        &::after {
           content: '+';
           position: absolute;
           right: -24px;
-          font-size: 33px;
-          font-weight: 300;
+          @include font(33px, 300);
           top: 2px;
         }
       }
-      p{
+
+      p {
         padding-left: 45px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $secondFont;
         text-transform: uppercase;
         position: relative;
-        &::before{
+
+        &::before {
           content: "";
           position: absolute;
-          left: 0;
-          top: 13px;
-          width: 30px;
-          height: 1px;
-          background: #777;
+          @include leftTop(0, 13px);
+          @include wh(30px, 1px);
+          background: $secondTextColor;
         }
-        span{
+
+        span {
           display: block;
-          font-family: 'Open Sans', sans-serif;
+          font-family: $secondFont;
           text-transform: uppercase
         }
       }
     }
   }
 }
-

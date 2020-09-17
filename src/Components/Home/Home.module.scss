@@ -1,3 +1,7 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+
 .mainBlockContent {
   position: relative;
   height: 100vh;
@@ -6,28 +10,21 @@
   padding: 0 30px;
 
   .colorBlock {
-    background-color: #f72b1c;
+    background-color: $primaryColor;
     position: fixed;
-    height: 200%;
-    width: 100%;
+    @include wh(100%, 200%);
+    @include leftTop(-83%, -50%);
     transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
   }
 
   .welcomeBlock {
     position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include wh(100%, 100%);
+    @include flex(flex, center, space-between);
     flex-wrap: wrap;
 
     .photo {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
+      @include background(cover, no-repeat, top);
       box-shadow: 0 0 7px rgba(0, 0, 0, .3);
       height: calc(100vh - 60px);
       border-radius: 15px;
@@ -38,25 +35,21 @@
       flex: 0 0 33.333%;
 
       .greeting h6 {
-        color: #777;
-        font-size: 22px;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
+        color: $secondTextColor;
+        @include font(22px, 400);
+        font-family: $secondFont;
         margin: 0;
         text-transform: uppercase;
       }
 
       .me {
         h1 {
-          font-family: 'Poppins', sans-serif;
-          font-size: 45px;
+          @include font(45px, 700);
           line-height: 45px;
-          font-weight: 700;
           margin: 18px 0 10px;
-          color: #666;
 
           span {
-            color: #f72b1c;
+            color: $primaryColor;
           }
         }
       }
@@ -65,8 +58,7 @@
         margin: 10px 0 23px;
         font-size: 16px;
         line-height: 32px;
-        font-family: 'Open Sans', sans-serif;
-        color: #666;
+        font-family: $secondFont;
       }
     }
   }

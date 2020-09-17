@@ -1,6 +1,7 @@
-.customTitle h3{
-  font-size: 26px;
-  font-weight: 600;
+@import "src/common/styles/mixins/mixins";
+
+.customTitle h3 {
+  @include font(26px, 600);
   text-transform: uppercase;
   text-align: center;
   margin: 0;

@@ -1,3 +1,6 @@
+@import "src/common/styles/mixins/mixins";
+@import "src/common/styles/variables/variables";
+
 .skillItems {
   display: flex;
   flex-wrap: wrap;
@@ -10,16 +13,12 @@
   margin-bottom: 30px;
 
   span {
-    display: flex;
-    color: #666;
+    @include flex(flex, center, center);
+    @include wh(120px,120px);
+    background: $elementsBc;
     font-size: 24px;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
-    background: #eee;
     text-align: center;
   }
 }

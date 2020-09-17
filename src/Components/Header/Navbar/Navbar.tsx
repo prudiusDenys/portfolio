@@ -10,7 +10,7 @@ export const Navbar = () => {
 		<div className={classes.navbar}>
 			<ul className={classes.list}>
 				{/*home*/}
-				<li className={classes.active}><NavLink exact to="/home"><FontAwesomeIcon className={classes.icon} icon={faHome}/></NavLink></li>
+				<li className={classes.active}><NavLink to="/"><FontAwesomeIcon className={classes.icon} icon={faHome}/></NavLink></li>
 				{/*About Me*/}
 				<li><NavLink to="/about"><FontAwesomeIcon className={classes.icon} icon={faAddressCard}/></NavLink></li>
 				{/*Skills*/}
