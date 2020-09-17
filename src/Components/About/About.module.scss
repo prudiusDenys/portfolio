@@ -1,0 +1,106 @@
+.aboutContent {
+
+}
+.personalWrapper{
+  display: flex;
+  margin: 0 -15px;
+}
+
+.personalBox {
+  flex: 0 0 50%;
+  padding: 0 15px;
+
+  .personalInfo h3 {
+    padding-bottom: 22px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .profileRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    .profileColumn {
+      flex: 0 0 50%;
+      padding: 0 15px;
+
+      ul {
+        font-family: 'Open Sans', sans-serif;
+
+        li {
+          padding-bottom: 20px;
+
+          .spanTitle {
+            opacity: .8;
+            text-transform: capitalize;
+          }
+
+          .spanValue {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.boxStartsRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0 15px;
+  flex: 0 0 50%;
+
+  .boxStartsColumn {
+    flex: 0 0 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    .boxStartsItem {
+      border: 1px solid #ddd;
+      padding: 20px 30px 25px 40px;
+
+      h3{
+        display: inline-block;
+        color: #f72b1c;
+        position: relative;
+        margin: 0;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+        &::after{
+          content: '+';
+          position: absolute;
+          right: -24px;
+          font-size: 33px;
+          font-weight: 300;
+          top: 2px;
+        }
+      }
+      p{
+        padding-left: 45px;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        &::before{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 13px;
+          width: 30px;
+          height: 1px;
+          background: #777;
+        }
+        span{
+          display: block;
+          font-family: 'Open Sans', sans-serif;
+          text-transform: uppercase
+        }
+      }
+    }
+  }
+}
+

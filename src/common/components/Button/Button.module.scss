@@ -1,0 +1,19 @@
+.btn {
+  background-color: #f72b1c;
+  border-radius: 26px;
+  height: 46px;
+  outline: none;
+  overflow: hidden;
+  display: inline-block;
+
+  a {
+    padding: 0 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+}

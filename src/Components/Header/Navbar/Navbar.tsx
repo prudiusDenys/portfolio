@@ -1,7 +1,8 @@
 import React from "react";
 import classes from "./Navbar.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAddressCard, faBriefcase, faEnvelopeOpen, faHome, faUser, faUserCog} from "@fortawesome/free-solid-svg-icons";
+import {faAddressCard, faBriefcase, faEnvelopeOpen, faHome, faUserCog} from "@fortawesome/free-solid-svg-icons";
+import {NavLink} from "react-router-dom";
 
 
 export const Navbar = () => {
@@ -9,17 +10,16 @@ export const Navbar = () => {
 		<div className={classes.navbar}>
 			<ul className={classes.list}>
 				{/*home*/}
-				<li className={classes.active}><a href="#"><FontAwesomeIcon className={classes.icon} icon={faHome}/></a></li>
+				<li className={classes.active}><NavLink exact to="/home"><FontAwesomeIcon className={classes.icon} icon={faHome}/></NavLink></li>
 				{/*About Me*/}
-				<li><a href="#"><FontAwesomeIcon className={classes.icon} icon={faAddressCard}/></a></li>
+				<li><NavLink to="/about"><FontAwesomeIcon className={classes.icon} icon={faAddressCard}/></NavLink></li>
 				{/*Skills*/}
-				<li><a href="#"><FontAwesomeIcon className={classes.icon} icon={faUserCog}/></a></li>
-				{/*Portfolio*/}
-				<li><a href="#"><FontAwesomeIcon className={classes.icon} icon={faBriefcase}/></a></li>
+				<li><NavLink to="/skills"><FontAwesomeIcon className={classes.icon} icon={faUserCog}/></NavLink></li>
+				{/*Projects*/}
+				<li><NavLink to="/projects"><FontAwesomeIcon className={classes.icon} icon={faBriefcase}/></NavLink></li>
 				{/*Contacts*/}
-				<li><a href="#"><FontAwesomeIcon className={classes.icon} icon={faEnvelopeOpen}/></a></li>
+				<li><NavLink to="/contacts"><FontAwesomeIcon className={classes.icon} icon={faEnvelopeOpen}/></NavLink></li>
 			</ul>
-
 		</div>
 	)
 }

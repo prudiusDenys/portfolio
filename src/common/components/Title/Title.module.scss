@@ -1,0 +1,42 @@
+.title {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+
+  h1 {
+    font-family: 'Poppins', sans-serif;;
+    color: #666;
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+
+    span {
+      text-transform: uppercase;
+      color: #f72b1c;
+    }
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .titleBg {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(30, 37, 48, 0.07);
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+  }
+}

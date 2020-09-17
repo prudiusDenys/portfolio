@@ -1,0 +1,25 @@
+.skillItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+}
+
+.skillItem {
+  flex: 0 0 25%;
+  margin-bottom: 30px;
+
+  span {
+    display: flex;
+    color: #666;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #eee;
+    text-align: center;
+  }
+}

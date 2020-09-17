@@ -48,7 +48,7 @@
 
       .me {
         h1 {
-          font-family: 'Poppins', sans-serif;;
+          font-family: 'Poppins', sans-serif;
           font-size: 45px;
           line-height: 45px;
           font-weight: 700;
@@ -67,26 +67,6 @@
         line-height: 32px;
         font-family: 'Open Sans', sans-serif;
         color: #666;
-      }
-
-      .moreAboutMe {
-        background-color: #f72b1c;
-        border-radius: 26px;
-        height: 46px;
-        outline: none;
-        overflow: hidden;
-        display: inline-block;
-
-        a {
-          padding: 0 40px;
-          font-family: 'Poppins', sans-serif;
-          color: #fff;
-          font-weight: 500;
-          line-height: 46px;
-          font-size: 15px;
-          text-transform: uppercase;
-          letter-spacing: .5px;
-        }
       }
     }
   }

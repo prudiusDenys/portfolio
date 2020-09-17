@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./MainBlock.module.scss";
 import myPhoto from '../../assets/images/myPhoto.jpg'
 import {Header} from "../Header/Header";
+import {Button} from "../../common/components/Button/Button";
 
 const myPhotoStyles = {
 	backgroundImage: `url(${myPhoto})`
@@ -31,9 +32,7 @@ export const MainBlock = () => {
 									I will be glad to mutual cooperation.</p>
 							</div>
 						</div>
-						<div className={classes.moreAboutMe}>
-							<a href="#">MORE ABOUT ME</a>
-						</div>
+								<Button title={'MORE ABOUT ME'}/>
 					</div>
 					<div>
 						<Header/>
