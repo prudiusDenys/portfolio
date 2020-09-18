@@ -5,7 +5,7 @@ import {Skills} from "./Components/Skills/Skills";
 import {Projects} from "./Components/Projects/Projects";
 import {Form} from "./Components/Form/Form";
 import {Footer} from "./Components/Footer/Footer";
-import {BrowserRouter as Router, Route,} from "react-router-dom";
+import {HashRouter as Router, Route,} from "react-router-dom";
 import {About} from "./Components/About/About";
 import {Header} from "./Components/Header/Header";
 
@@ -14,7 +14,7 @@ const App = () => {
 		<Router>
 		<div className="App">
 			<Route exact path={'/'}  render={()=> <Home/>} />
-			<Route path={'/about'}  render={()=> <About/>} />
+			<Route  path={'/about'}  render={()=> <About/>} />
 			{/*<Route path={'/skills'}  render={()=> <Skills/>} />*/}
 			{/*<Route path={'/projects'}  render={()=> <Projects/>} />*/}
 			{/*<Route path={'/contacts'}  render={()=> <Contacts/>} />*/}
