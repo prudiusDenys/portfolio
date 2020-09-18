@@ -7,6 +7,7 @@ import {Separator} from "../../common/components/Separator/Separator";
 import {CustomTitle} from "../../common/components/CustomTitle/CustomTitle";
 import {Skills} from "./Skills/Skills";
 import {Header} from "../Header/Header";
+import {Experience} from "./Experience/Experience";
 
 
 export const About = () => {
@@ -87,7 +88,8 @@ export const About = () => {
 					<CustomTitle customTitle={'My Skills'}/>
 					<Skills/>
 					<Separator/>
-					<CustomTitle customTitle={'EXPERIENCE & EDUCATION'}/>
+					<CustomTitle customTitle={'EXPERIENCE'}/>
+					<Experience/>
 				</div>
 			</div>
 		</div>

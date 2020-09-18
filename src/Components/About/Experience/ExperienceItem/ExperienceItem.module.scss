@@ -1,0 +1,87 @@
+@import "src/common/styles/mixins/mixins";
+@import "src/common/styles/variables/variables";
+
+.experienceItem {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 50px;
+
+  .icon {
+    @include wh(40px, 40px);
+    background-color: $primaryColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+
+    path {
+      font-size: 14px;
+    }
+  }
+
+  .time {
+    font-family: $secondFont;
+    background-color: $elementsBc;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    opacity: .8;
+    text-transform: uppercase
+  }
+
+  .positionBlock {
+    display: flex;
+    align-items: center;
+
+    .position {
+      @include font(18px, 500);
+      margin: 7px 0 10px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .company {
+      opacity: .8;
+      font-weight: 600;
+      font-size: 15px;
+      position: relative;
+      padding-left: 26px;
+      font-family: $secondFont;
+      text-transform: uppercase;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 2px;
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: .8;
+        background-color: #666;
+      }
+    }
+  }
+
+  .duties p {
+    margin: 0;
+    font-size: 14px;
+    font-family: $secondFont;
+
+    &::after {
+      border-left: 1px solid #ddd;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20px;
+      bottom: 0;
+    }
+  }
+}
