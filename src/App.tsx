@@ -7,6 +7,7 @@ import {Footer} from "./Components/Footer/Footer";
 import {HashRouter as Router, Route,} from "react-router-dom";
 import {About} from "./Components/About/About";
 import {Header} from "./Components/Header/Header";
+import {Contacts} from "./Components/Contacts/Contacts";
 
 const App = () => {
 	return (
@@ -14,8 +15,8 @@ const App = () => {
 		<div className="App">
 			<Route exact path={'/'}  render={()=> <Home/>} />
 			<Route  path={'/about'}  render={()=> <About/>} />
-			<Route path={'/skills'}  render={()=> <Projects/>} />
-			{/*<Route path={'/contacts'}  render={()=> <Contacts/>} />*/}
+			<Route path={'/projects'}  render={()=> <Projects/>} />
+			<Route path={'/contacts'}  render={()=> <Contacts/>} />
 			{/*<Form/>*/}
 			{/*<Footer/>*/}
 		</div>
