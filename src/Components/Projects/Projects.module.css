@@ -1,22 +1,12 @@
-.projects {
-  min-height: 100vh;
-  background-color: #8b9ddc;
-}
-
 .projectsContent {
   text-align: center;
-}
-
-.title {
-  background-color: #c0ad91;
 }
 
 .projectsBlock {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px;
+  margin: 0 -15px;
   height: 100%;
-  border: 1px solid;
 }
 
 @media (max-width: 768px) {

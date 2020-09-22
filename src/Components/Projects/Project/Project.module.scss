@@ -1,0 +1,92 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+.project {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.image {
+  position: relative;
+  @include wh(100%, 250px);
+
+  &:hover {
+    .showProject {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  a {
+    @include wh(100%, 100%);
+    transition: all 0.5s;
+
+    img {
+      @include wh(100%, 100%);
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+
+  .showProject {
+    position: absolute;
+    @include leftTop(0, 0);
+    @include wh(100%, 0);
+    background-color: rgba($primaryColor, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+
+    a {
+      @include flex(flex, center, center);
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    &:hover {
+      a {
+        transition-delay: 0.3s;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.description {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 1020px) {
+  .showProject {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex: 0 1 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    flex: 0 1 100%;
+    margin-bottom: 10px;
+  }
+}
