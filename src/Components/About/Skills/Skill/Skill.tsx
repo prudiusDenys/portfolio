@@ -7,7 +7,6 @@ type PropsType = {
 
 export const Skill = (props: PropsType) => {
 
-
 	const skill = props.skills.map((s, i) => {
 		return (
 			<div key={i} className={classes.skillItem}>
@@ -17,7 +16,6 @@ export const Skill = (props: PropsType) => {
 			</div>
 		)
 	})
-
 
 	return (
 		<div className={classes.skillItems}>

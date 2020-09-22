@@ -1,0 +1,31 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+.profileRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  .profileColumn {
+    flex: 0 0 50%;
+    padding: 0 15px;
+
+    ul {
+      font-family: $secondFont;
+
+      li {
+        padding-bottom: 20px;
+
+        .spanTitle {
+          opacity: .8;
+          text-transform: capitalize;
+        }
+
+        .spanValue {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+

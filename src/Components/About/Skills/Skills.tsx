@@ -5,14 +5,13 @@ import {Skill} from "./Skill/Skill";
 
 export const Skills = () => {
 
-	const skills:Array<string> = ['React', 'Redux','JS', 'TS', 'HTML5', 'CSS', 'SASS', 'API']
-
+	const skills: Array<string> = ['React', 'Redux', 'JS', 'TS', 'HTML5', 'CSS', 'SASS', 'API']
 
 	return (
 		<div className={classes.skills}>
 			<div className={styleContainer.container}>
 				<div className={classes.skillsContent}>
-						<Skill skills={skills}/>
+					<Skill skills={skills}/>
 				</div>
 			</div>
 		</div>

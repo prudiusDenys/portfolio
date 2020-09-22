@@ -1,0 +1,10 @@
+@import "../../../../common/styles/variables/variables";
+@import "../../../../common/styles/mixins/mixins";
+
+.boxStartsRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0 15px;
+  flex: 0 0 50%;
+}

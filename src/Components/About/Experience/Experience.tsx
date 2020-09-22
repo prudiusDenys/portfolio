@@ -21,9 +21,7 @@ export const Experience = () => {
 		},
 	];
 
-	const experienceItem = experienceData.map(i => <ExperienceItem key={i.id} time={i.time} position={i.position}
-																																 company={i.company}
-																																 duties={i.duties}/>)
+	const experienceItem = experienceData.map(i => <ExperienceItem key={i.id} time={i.time} position={i.position} company={i.company} duties={i.duties}/>)
 
 	return (
 		<div className={classes.experience}>
