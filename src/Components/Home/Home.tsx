@@ -32,7 +32,7 @@ export const Home = () => {
 									I will be glad to mutual cooperation.</p>
 							</div>
 						</div>
-								<Button title={'MORE ABOUT ME'}/>
+								<Button title={'MORE ABOUT ME'} path={'#/about'}/>
 					</div>
 					<div>
 						<Header/>

@@ -12,7 +12,7 @@ export const Form = () => {
 				<input type="tel" name={'name'} placeholder={'Your phone number'}/>
 			</div>
 			<textarea name={'message'} placeholder={'Your message'} required/>
-			<Button title={'Send message'}/>
+			<Button title={'Send message'} path={'#'}/>
 		</form>
 	)
 }

@@ -36,7 +36,7 @@ export const PersonalBox = () => {
 				<CustomTitle customTitle={'PERSONAL INFOS'}/>
 			</div>
 			{profileRow}
-			<Button title={'DOWNLOAD CV'}/>
+			<Button title={'DOWNLOAD CV'} path={'#'}/>
 		</div>
 	)
 }
