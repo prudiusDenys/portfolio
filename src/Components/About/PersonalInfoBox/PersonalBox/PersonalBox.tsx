@@ -20,13 +20,13 @@ export const PersonalBox = () => {
 		languages: ['Russian', 'English', 'German']
 	}]
 
-	const profileRow = PersonalInfoData.map((p,i) => {
+	const profileRow = PersonalInfoData.map((p, i) => {
 		return (
-				<ProfileRow key={i} firstName={p.firstName} lastName={p.lastName}
-										age={p.age} nationality={p.nationality} freelance={p.freelance}
-										address={p.address}
-										phone={p.phone} email={p.email}
-										skype={p.skype} languages={p.languages}/>
+			<ProfileRow key={i} firstName={p.firstName} lastName={p.lastName}
+									age={p.age} nationality={p.nationality} freelance={p.freelance}
+									address={p.address}
+									phone={p.phone} email={p.email}
+									skype={p.skype} languages={p.languages}/>
 		)
 	})
 
@@ -35,7 +35,7 @@ export const PersonalBox = () => {
 			<div className={classes.personalInfo}>
 				<CustomTitle customTitle={'PERSONAL INFOS'}/>
 			</div>
-				{profileRow}
+			{profileRow}
 			<Button title={'DOWNLOAD CV'}/>
 		</div>
 	)

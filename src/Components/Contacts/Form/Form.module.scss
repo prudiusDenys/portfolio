@@ -1,0 +1,32 @@
+.contactForm {
+  flex: 0 0 66.666%;
+  padding: 0 15px;
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      text-transform: uppercase;
+      border: 1px solid #ddd;
+      padding: 11px 26px;
+      margin-bottom: 30px;
+      border-radius: 30px;
+      outline: none;
+      transition: .1s;
+    }
+  }
+
+  textarea {
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 12px 26px;
+    margin-bottom: 20px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 30px;
+    outline: none;
+    transition: .1s;
+  }
+}

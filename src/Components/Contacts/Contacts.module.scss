@@ -1,0 +1,8 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+.contactsContent {
+  padding-bottom: 85px;
+  display: flex;
+  margin: 0 -15px;
+}

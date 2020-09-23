@@ -12,7 +12,7 @@ import todolist from '../../assets/images/todolist.jpg';
 
 type ProjectsType = {
 	id: string
-	image:  string
+	image: string
 	description: string
 }
 

@@ -1,0 +1,77 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+.boxContacts {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+
+  h3 {
+    padding-bottom: 16px;
+    text-align: left;
+  }
+
+  p {
+    font-family: $secondFont;
+    margin-top: 0;
+  }
+
+  .myContacts {
+    position: relative;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: $secondFont;
+    padding-left: 50px;
+    margin-bottom: 15px;
+
+    .icon {
+      position: absolute;
+      @include leftTop(0, 50%);
+      transform: translateY(-50%);
+      font-size: 33px;
+      color: $primaryColor;
+    }
+
+    .phoneIcon {
+      font-size: 37px;
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      opacity: .8;
+      font-weight: 400;
+    }
+  }
+
+  .socialList {
+    display: flex;
+
+    li {
+      position: relative;
+      @include wh(40px, 40px);
+      border-radius: 50%;
+      background: $elementsBc;
+      margin-left: 15px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    a {
+      @include wh(100%, 100%);
+
+      .icon {
+        position: absolute;
+        @include leftTop(50%, 50%);
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        transition: .3s;
+      }
+
+      path {
+        color: #666;
+      }
+    }
+  }
+}
