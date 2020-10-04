@@ -1,12 +1,24 @@
+@import "src/common/styles/variables/variables";
+@import "src/common/styles/mixins/mixins";
+
+
 .contactForm {
   flex: 0 0 66.666%;
   padding: 0 15px;
 
-  .inputs {
+
+  .inputsBox {
     display: flex;
-    justify-content: space-between;
+    margin: 0 -15px;
+  }
+
+  .inputItem {
+    padding: 0 15px;
+    position: relative;
+    flex: 0 0 33.333%;
 
     input {
+      width: 100%;
       text-transform: uppercase;
       border: 1px solid #ddd;
       padding: 11px 26px;
@@ -16,17 +28,45 @@
       transition: .1s;
     }
   }
-
-  textarea {
-    text-transform: uppercase;
-    border: 1px solid #ddd;
-    width: 100%;
-    padding: 12px 26px;
-    margin-bottom: 20px;
-    height: 160px;
+  .error {
+    position: absolute;
+    bottom: 3px;
+    left: 15px;
+    font-size: 14px;
+    color: $primaryColor;
+    height: 22px;
+    width: 213px;
     overflow: hidden;
-    border-radius: 30px;
+  }
+
+  .textareaBox{
+    position: relative;
+    textarea {
+      text-transform: uppercase;
+      border: 1px solid #ddd;
+      width: 100%;
+      padding: 12px 26px;
+      margin-bottom: 20px;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 30px;
+      outline: none;
+      transition: .1s;
+    }
+  }
+  button {
+    background-color: $primaryColor;
+    border-radius: 26px;
+    height: 46px;
     outline: none;
-    transition: .1s;
+    overflow: hidden;
+    padding: 0 40px;
+    color: #fff;
+    @include font(15px,500);
+    line-height: 46px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border: none;
+    cursor: pointer;
   }
 }
