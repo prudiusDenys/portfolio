@@ -27,7 +27,7 @@ export const Form = () => {
 	});
 
 	const onSubmit = (data: InputsType, e: any) => {
-		axios.post('http://localhost:3010/sendMessage',data)
+		axios.post('https://portfolio-smtp.herokuapp.com/sendMessage',data)
 			.then(()=>e.target.reset())
 	}
 
