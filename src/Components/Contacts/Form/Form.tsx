@@ -3,7 +3,7 @@ import classes from "./Form.module.scss";
 import {useForm} from "react-hook-form";
 import * as Yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup';
-
+import axios from 'axios'
 
 type InputsType = {
 	name: string
@@ -27,10 +27,8 @@ export const Form = () => {
 	});
 
 	const onSubmit = (data: InputsType, e: any) => {
-
-		new Promise((resolve, reject) => {
-			setTimeout(() => resolve(alert(JSON.stringify(data))), 2000)
-		}).then(() => e.target.reset())
+		axios.post('http://localhost:3010/sendMessage',data)
+			.then(()=>e.target.reset())
 	}
 
 	return (
