@@ -1,0 +1,49 @@
+@import "src/common/styles/mixins/mixins";
+@import "src/common/styles/variables/variables";
+
+
+.list {
+  padding: 30px 30px 0 30px;
+
+  li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 26px;
+    padding: 14px 0;
+  }
+
+  .active {
+    color: $primaryColor;
+    font-weight: 600;
+  }
+
+  span {
+    margin-left: 25px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .list {
+    padding: 15px 15px 0 15px;
+
+    a {
+      font-size: 18px;
+    }
+
+    span {
+      margin-left: 20px;
+    }
+
+    .icon {
+      font-size: 18px;
+    }
+  }
+}

@@ -26,8 +26,8 @@
     .photo {
       @include background(cover, no-repeat, top);
       box-shadow: 0 0 7px rgba(0, 0, 0, .3);
-      height: calc(100vh - 60px);
       border-radius: 15px;
+      padding-bottom: 47%;
       flex: 0 0 33.333%;
     }
 
@@ -47,6 +47,7 @@
           @include font(45px, 700);
           line-height: 45px;
           margin: 18px 0 10px;
+          text-transform: uppercase;
 
           span {
             color: $primaryColor;
@@ -65,27 +66,97 @@
 }
 
 
-@media (max-width: 940px) {
-  .welcomeBlock {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .welcome {
-    display: block;
-    max-width: 100%;
+@media (max-width: $xl) {
+  .mainBlockContent {
+    .welcomeBlock {
+      .aboutMe {
+        flex: 0 0 48%;
+      }
+    }
   }
 }
 
-@media (max-width: 768px) {
-  .mainBlock, .mainBlockContent {
-    min-height: 70vh;
+@media (max-width: $tablets) {
+  .mainBlockContent {
+    .colorBlock {
+      display: none;
+    }
+
+    flex-direction: column;
+
+    .welcomeBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      max-width: 550px;
+      width: 100%;
+
+      .photo {
+        @include background(cover, no-repeat, center);
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        margin: 0 auto 25px;
+        padding-bottom: 0;
+        flex: none;
+      }
+
+      .greeting {
+
+      }
+
+      .aboutMe {
+        flex: none;
+      }
+    }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $mobile) {
+  .mainBlockContent {
+    .welcomeBlock {
+      .photo {
+        @include background(cover, no-repeat, center);
+        width: 160px;
+        height: 160px;
+        margin: 0 0 12px 0;
+      }
 
-  .welcome h1 {
-    font-size: 18px;
+
+
+      .aboutMe {
+        .me {
+          h1 {
+            font-size: 29px;
+            line-height: 29px;
+            margin: 18px 0 13px;
+          }
+        }
+
+        .greeting h6 {
+          font-size: 19px;
+        }
+
+        &Info {
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileXS) {
+  .mainBlockContent {
+    .welcomeBlock {
+      .aboutMe {
+        .me {
+          h1 {
+            font-size: 26px;
+          }
+        }
+      }
+    }
   }
 }

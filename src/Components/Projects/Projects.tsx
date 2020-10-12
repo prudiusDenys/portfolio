@@ -8,6 +8,7 @@ import {Title} from "../../common/components/Title/Title";
 import counter from '../../assets/images/counter.jpg';
 import social from '../../assets/images/social.jpg';
 import todolist from '../../assets/images/todolist.jpg';
+import {BurgerMenu} from "../Header/BurgerMenu/BurgerMenu";
 
 
 type ProjectsType = {
@@ -31,6 +32,7 @@ export const Projects = () => {
 
 	return (
 		<div className={classes.projects}>
+			<BurgerMenu/>
 			<Header/>
 			<Title title={'My'} titleSpan={'Portfolio'} titleBg={'works'}/>
 			<div className={styleContainer.container}>

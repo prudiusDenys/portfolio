@@ -17,3 +17,11 @@
     letter-spacing: .5px;
   }
 }
+
+@media (max-width: $mobile) {
+  .btn{
+    a{
+      padding: 0 28px;
+    }
+  }
+}

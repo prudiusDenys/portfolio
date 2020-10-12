@@ -8,11 +8,14 @@ import {Skills} from "./Skills/Skills";
 import {Header} from "../Header/Header";
 import {Experience} from "./Experience/Experience";
 import {PersonalInfoBox} from "./PersonalInfoBox/PersonalInfoBox";
+import { BurgerMenu } from "../Header/BurgerMenu/BurgerMenu";
+
 
 
 export const About = () => {
 	return (
 		<div className={classes.about}>
+			<BurgerMenu/>
 			<Header/>
 			<Title title={'ABOUT'} titleSpan={'ME'} titleBg={'RESUME'}/>
 			<div className={styleContainer.container}>

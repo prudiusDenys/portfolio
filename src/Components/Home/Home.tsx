@@ -3,6 +3,7 @@ import classes from "./Home.module.scss";
 import myPhoto from '../../assets/images/myPhoto.jpg'
 import {Header} from "../Header/Header";
 import {Button} from "../../common/components/Button/Button";
+import {BurgerMenu} from "../Header/BurgerMenu/BurgerMenu";
 
 const myPhotoStyles = {
 	backgroundImage: `url(${myPhoto})`
@@ -12,10 +13,15 @@ export const Home = () => {
 	return (
 		<div className={classes.mainBlock}>
 			<div className={classes.mainBlockContent}>
-				<div className={classes.colorBlock}></div>
+				<BurgerMenu/>
+				<div className={classes.colorBlock}>
+
+				</div>
 				<div className={classes.welcomeBlock}>
 
-					<div className={classes.photo} style={myPhotoStyles}></div>
+					<div className={classes.photo} style={myPhotoStyles}>
+
+					</div>
 					<div className={classes.aboutMe}>
 						<div className={classes.greeting}>
 							<h6>Hi There !</h6>
