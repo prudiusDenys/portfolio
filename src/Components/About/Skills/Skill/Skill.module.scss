@@ -1,24 +1,34 @@
 @import "src/common/styles/mixins/mixins";
 @import "src/common/styles/variables/variables";
 
-.skillItems {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-
-}
 
 .skillItem {
   flex: 0 0 25%;
   margin-bottom: 30px;
+  padding: 0 15px;
 
   span {
     @include flex(flex, center, center);
-    @include wh(120px,120px);
+    @include wh(120px, 120px);
     background: $elementsBc;
     font-size: 24px;
     margin: 0 auto;
     border-radius: 50%;
     text-align: center;
+  }
+}
+
+@media (max-width: $lSPhones) {
+  .skillItem {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .skillItem {
+    span {
+      @include wh(96px, 96px);
+      font-size: 16px;
+    }
   }
 }

@@ -3,7 +3,6 @@
 
 .profileRow {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 -15px;
 
   .profileColumn {
@@ -29,3 +28,21 @@
   }
 }
 
+@media (max-width: $mobile) {
+  .profileRow {
+    .profileColumn {
+      ul {
+        li {
+          .spanTitle {
+            font-size: 14px;
+          }
+
+          .spanValue {
+            display: block;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

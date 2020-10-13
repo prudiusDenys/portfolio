@@ -28,12 +28,35 @@
   .titleBg {
     color: rgba(30, 37, 48, 0.07);
     @include font(110px, 800);
-    @include leftTop(0,50%);
+    @include leftTop(0, 50%);
     letter-spacing: 10px;
     line-height: 0.7;
     position: absolute;
     right: 0;
     text-transform: uppercase;
     transform: translateY(-50%);
+  }
+}
+
+@media (max-width: $mobile) {
+  .title {
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+    h1 {
+      @include font(46px, 900);
+    }
+  }
+  .titleBg {
+    display: none;
+  }
+}
+
+@media (max-width: $mobileXS) {
+  .title {
+    h1 {
+      @include font(26px, 900);
+    }
   }
 }

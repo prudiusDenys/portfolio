@@ -1,0 +1,15 @@
+@import "src/common/styles/variables/variables";
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablets) {
+  .skills {
+    width: 100%;
+  }
+}

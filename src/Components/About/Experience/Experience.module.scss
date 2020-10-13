@@ -1,8 +1,5 @@
 .experienceContent{
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
-}
-.firstColumn{
-  flex: 0 0 50%;
-  padding: 0 15px;
 }

@@ -13,3 +13,21 @@
     }
   }
 }
+
+@media (max-width: $tablets) {
+  .personalBox {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 1286px) and (min-width: $tablets) {
+  .personalBox {
+    flex: 0 0 41.666%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .personalBox{
+    padding: 0;
+  }
+}

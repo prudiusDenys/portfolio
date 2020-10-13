@@ -8,3 +8,19 @@
   padding: 0 15px;
   flex: 0 0 50%;
 }
+
+@media (min-width: $tablets) {
+  .boxStartsRow {
+    flex: 0 0 52%;
+  }
+}
+@media (max-width: $tablets) {
+  .boxStartsRow {
+    padding: 0;
+  }
+}
+@media (min-width: 1286px) {
+  .boxStartsRow {
+    flex: 0 0 50%;
+  }
+}

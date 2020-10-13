@@ -18,8 +18,8 @@ export const Skill = (props: PropsType) => {
 	})
 
 	return (
-		<div className={classes.skillItems}>
+		<>
 			{skill}
-		</div>
+		</>
 	)
 }

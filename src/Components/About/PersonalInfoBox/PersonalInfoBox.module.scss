@@ -1,4 +1,13 @@
+@import "src/common/styles/variables/variables";
+
 .personalWrapper {
   display: flex;
   margin: 0 -15px;
+}
+
+@media (max-width: $tablets) {
+  .personalWrapper{
+    flex-direction: column;
+    margin: 0;
+  }
 }

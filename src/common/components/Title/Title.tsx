@@ -8,7 +8,7 @@ type PropsType = {
 }
 
 export const Title = (props: PropsType) => {
-	return(
+	return (
 		<div>
 			<div className={classes.title}>
 				<h1>{props.title} <span>{props.titleSpan}</span></h1>
