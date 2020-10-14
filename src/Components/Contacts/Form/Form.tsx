@@ -3,19 +3,19 @@ import classes from "./Form.module.scss";
 import {useForm} from "react-hook-form";
 import * as Yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup';
-import axios from 'axios'
+import {sendEmail} from "../../../api/apiRequests";
 
-type InputsType = {
+export type InputsType = {
 	name: string
 	email: string
 	phone: string
 	message: string
 }
 const schema = Yup.object().shape({
-	name: Yup.string().required(),
-	email: Yup.string().email('email is not valid').required(),
-	phone: Yup.number().positive().integer(),
-	message: Yup.string().required()
+	name: Yup.string().required('This Field is required').matches(/^([A-Za-zА-ЯЁа-яё])/g, 'name is not valid'),
+	email: Yup.string().email('email is not valid').required('This Field is required'),
+	phone: Yup.string().matches(/((\+(\d{1,3}))?[ -]?(\d{3})[ -]?(\d{3})[ -]?(\d{2})[ -]?(\d{2})|^$)/gm, 'phone number is not valid'),
+	message: Yup.string().required('This Field is required')
 })
 
 
@@ -27,8 +27,7 @@ export const Form = () => {
 	});
 
 	const onSubmit = (data: InputsType, e: any) => {
-		axios.post('https://portfolio-smtp-server.herokuapp.com/sendMessage',data)
-			.then(()=>e.target.reset())
+		sendEmail(data, e)
 	}
 
 	return (
