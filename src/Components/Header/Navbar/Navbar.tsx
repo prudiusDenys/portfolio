@@ -10,13 +10,13 @@ export const Navbar = () => {
 		<div className={classes.navbar}>
 			<ul className={classes.list}>
 				{/*home*/}
-				<li><NavLink exact to="/" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon}  icon={faHome}/></NavLink></li>
+				<li><NavLink exact to="/" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon}  icon={faHome}/><h2 className={classes.linkItem}>Home</h2></NavLink></li>
 				{/*About Me*/}
-				<li><NavLink to="/about" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faAddressCard}/></NavLink></li>
+				<li><NavLink to="/about" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faAddressCard}/><h2 className={classes.linkItem}>About</h2></NavLink></li>
 				{/*Projects*/}
-				<li><NavLink to="/projects" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faBriefcase}/></NavLink></li>
+				<li><NavLink to="/projects" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faBriefcase}/><h2 className={classes.linkItem}>Projects</h2></NavLink></li>
 				{/*Contacts*/}
-				<li><NavLink to="/contacts" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faEnvelopeOpen}/></NavLink></li>
+				<li><NavLink to="/contacts" activeClassName={classes.active}><FontAwesomeIcon className={classes.icon} icon={faEnvelopeOpen}/><h2 className={classes.linkItem}>Contacts</h2></NavLink></li>
 			</ul>
 		</div>
 	)

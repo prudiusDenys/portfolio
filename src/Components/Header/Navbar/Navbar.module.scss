@@ -15,20 +15,55 @@
 
     a {
       @include wh(100%, 100%);
+      padding: 0;
+      display: block;
+      border-radius: 50%;
+
+      &:hover {
+        color: #fff;
+        background-color: $primaryColor;
+      }
 
       .icon {
         position: absolute;
+        z-index: 2;
         @include leftTop(50%, 50%);
         font-size: 19px;
         transform: translate(-50%, -50%);
-        transition: .3s;
+      }
+
+      .linkItem {
+        z-index: 1;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 30px;
+        margin: 0;
+        text-transform: uppercase;
+        transition: all .3s;
+        opacity: 0;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: $primaryColor;
+        height: 50px;
+        padding: 0 25px 0 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      &:hover .linkItem {
+        opacity: 1;
+        right: 27px;
+        margin: 0;
+        text-align: center;
+        border-radius: 30px 0 0 30px;
       }
     }
   }
 
   .active {
     background: $primaryColor;
-    border-radius: 50%;
 
     .icon {
       color: #fff;
