@@ -70,3 +70,29 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: $tablets) {
+  .contactForm {
+    flex: 0 0 100%;
+    padding: 0;
+    button {
+      padding: 0 28px !important;
+      font-size: 14px !important;
+    }
+  }
+
+}
+
+@media (max-width: $lSPhones) {
+  .contactForm {
+    .inputsBox {
+      flex-direction: column;
+      margin: 0;
+    }
+    .inputItem {
+      padding: 0;
+      flex: 0 0 100%;
+
+    }
+  }
+}

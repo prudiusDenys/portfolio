@@ -1,0 +1,26 @@
+@import "src/common/styles/variables/variables";
+
+.projectsContent {
+  text-align: center;
+}
+
+.projectsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  height: 100%;
+}
+
+
+@media (max-width: 1300px) and (min-width: $tablets) {
+  .projectsBlock {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablets) {
+  .projects {
+    min-height: 70vh;
+  }
+}

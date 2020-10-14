@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Projects.module.css";
+import classes from "./Projects.module.scss";
 import styleContainer from '../../common/styles/container/Container.module.scss'
 import {Project} from "./Project/Project";
 import {v1} from "uuid";
@@ -33,8 +33,8 @@ export const Projects = () => {
 		<div className={classes.projects}>
 			<Header/>
 			<div className={styleContainer.container}>
+				<Title title={'My'} titleSpan={'Portfolio'} titleBg={'works'}/>
 				<div className={classes.projectsContent}>
-					<Title title={'My'} titleSpan={'Portfolio'} titleBg={'works'}/>
 					<div className={classes.projectsBlock}>
 						{project}
 					</div>

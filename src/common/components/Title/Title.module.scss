@@ -38,6 +38,15 @@
   }
 }
 
+
+@media (max-width: $lSPhones) {
+  .title {
+    .titleBg {
+      @include font(89px, 800);
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .title {
     text-align: left;

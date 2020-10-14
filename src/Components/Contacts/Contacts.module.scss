@@ -6,3 +6,18 @@
   display: flex;
   margin: 0 -15px;
 }
+
+@media (max-width: 1300px) and (min-width: $tablets) {
+  .contactsContent {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablets) {
+  .contactsContent {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}

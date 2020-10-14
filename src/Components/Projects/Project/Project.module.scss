@@ -71,20 +71,17 @@
 
 }
 
-@media (max-width: 1020px) {
-  .showProject {
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: $tablets) {
   .project {
     flex: 0 1 50%;
     margin-bottom: 10px;
   }
+  .image {
+    height: 200px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
   .project {
     flex: 0 1 100%;
     margin-bottom: 10px;

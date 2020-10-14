@@ -10,8 +10,8 @@ export const Contacts = () => {
 	return (
 		<div className={classes.contacts}>
 			<Header/>
-			<Title title={'get in'} titleSpan={'touch'} titleBg={'contact'}/>
 			<div className={styleContainer.container}>
+				<Title title={'get in'} titleSpan={'touch'} titleBg={'contact'}/>
 				<div className={classes.contactsContent}>
 					<ContactsBox/>
 					<Form/>
