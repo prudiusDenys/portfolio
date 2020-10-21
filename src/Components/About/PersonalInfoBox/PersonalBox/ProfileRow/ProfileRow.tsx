@@ -39,10 +39,20 @@ export const ProfileRow = (props: PropsType) => {
 				<ul>
 					<li><span className={classes.spanTitle}>Address : </span><span
 						className={classes.spanValue}>{props.address}</span></li>
-					<li><span className={classes.spanTitle}>phone : </span><span className={classes.spanValue}><a
-						href="tel:3518441020">{props.phone}</a></span></li>
-					<li><span className={classes.spanTitle}>Email : </span><span
-						className={classes.spanValue}>{props.email}</span></li>
+					<li>
+						<span className={classes.spanTitle}>phone : </span>
+						<span className={classes.spanValue}>
+							<a href="tel:3518441020">{props.phone}</a>
+						</span>
+					</li>
+					<li>
+						<span className={classes.spanTitle}>Email : </span>
+						<span className={classes.spanValue}>
+							<a href="mailto: prdslife@gmail.com">{props.email}</a>
+						</span>
+					</li>
+
+
 					<li><span className={classes.spanTitle}>Skype: </span><span
 						className={classes.spanValue}>{props.skype}</span></li>
 					<li><span className={classes.spanTitle}>Languages : </span><span className={classes.spanValue}>

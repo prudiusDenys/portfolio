@@ -4,6 +4,7 @@ import {Button} from "../../../../common/components/Button/Button";
 import {CustomTitle} from "../../../../common/components/CustomTitle/CustomTitle";
 import {ProfileRow} from "./ProfileRow/ProfileRow";
 import {PersonalInfoDataType} from "../../../../common/types/types";
+import cv from '../../../../assets/cv/myCv.pdf'
 
 export const PersonalBox = () => {
 
@@ -36,7 +37,7 @@ export const PersonalBox = () => {
 				<CustomTitle customTitle={'PERSONAL INFOS'}/>
 			</div>
 			{profileRow}
-			<Button title={'DOWNLOAD CV'} path={'#'}/>
+				<Button title={'DOWNLOAD CV'} path={cv} download={true}/>
 		</div>
 	)
 }

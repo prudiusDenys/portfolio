@@ -1,5 +1,6 @@
 @import "src/common/styles/variables/variables";
 @import "src/common/styles/mixins/mixins";
+
 .btn {
   background-color: $primaryColor;
   border-radius: 26px;
@@ -7,12 +8,12 @@
   outline: none;
   overflow: hidden;
   display: inline-block;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
   a {
     padding: 0 40px;
     color: #fff;
-    @include font(15px,500);
+    @include font(15px, 500);
     line-height: 46px;
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -20,8 +21,8 @@
 }
 
 @media (max-width: $mobile) {
-  .btn{
-    a{
+  .btn {
+    a {
       padding: 0 28px;
       font-size: 14px;
     }

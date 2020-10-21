@@ -14,7 +14,6 @@ export const ContactsBox = () => {
 				Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
 				opportunities to be part of your visions.
 			</p>
-
 			<div className={classes.myContacts}>
 				<div className={classes.icon}>
 					<FontAwesomeIcon icon={faEnvelopeOpen}/>
@@ -22,7 +21,6 @@ export const ContactsBox = () => {
 				<span>Mail me</span>
 				<a href="mailto:prdslife@gmail.com">prdslife@gmail.com</a>
 			</div>
-
 			<div className={classes.myContacts}>
 				<div className={classes.icon + ' ' + classes.phoneIcon}>
 					<FontAwesomeIcon icon={faPhoneSquareAlt}/>
@@ -30,11 +28,11 @@ export const ContactsBox = () => {
 				<span>Call me</span>
 				<a href="tel:3518441020">+393518441020</a>
 			</div>
-
 			<ul className={classes.socialList}>
-				<li><a href="#"><FontAwesomeIcon icon={faLinkedinIn} className={classes.icon}/></a></li>
-				<li><a href="#"><FontAwesomeIcon icon={faVk} className={classes.icon}/></a></li>
-				<li><a href="#"><FontAwesomeIcon icon={faGithub} className={classes.icon}/></a></li>
+				<li><a href="https://www.linkedin.com/in/denzimm"><FontAwesomeIcon icon={faLinkedinIn} className={classes.icon}/></a></li>
+				<li><a href="https://vk.com/denzimmer"><FontAwesomeIcon icon={faVk} className={classes.icon}/></a></li>
+				<li><a href="https://github.com/prudiusDenys"><FontAwesomeIcon icon={faGithub} className={classes.icon}/></a>
+				</li>
 			</ul>
 		</div>
 	)
