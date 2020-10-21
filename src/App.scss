@@ -46,21 +46,8 @@ li {
   list-style: none;
 }
 
-
-.burgerMenuBlock {
-  display: none;
-  position: relative;
-  background-color: $elementsBc;
-  width: 100%;
-  height: 62px;
+:root {
+  --app-height: 100%;
 }
-
-@media (max-width: $tablets) {
-  .burgerMenuBlock {
-    display: flex;
-    align-items: center;
-  }
-}
-
 
 /* END GLOBAL STYLES */

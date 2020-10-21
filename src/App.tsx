@@ -6,14 +6,15 @@ import {HashRouter as Router, Route,} from "react-router-dom";
 import {About} from "./Components/About/About";
 import {Contacts} from "./Components/Contacts/Contacts";
 import {BurgerMenu} from "./Components/Header/BurgerMenu/BurgerMenu";
+import {Header} from "./Components/Header/Header";
 
 const App = () => {
+
 	return (
 		<Router>
 			<div className="App">
-				<div className='burgerMenuBlock'>
-					<BurgerMenu/>
-				</div>
+				<Header/>
+				<BurgerMenu/>
 				<Route exact path={'/'} render={() => <Home/>}/>
 				<Route path={'/about'} render={() => <About/>}/>
 				<Route path={'/projects'} render={() => <Projects/>}/>

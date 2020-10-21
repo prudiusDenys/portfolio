@@ -86,21 +86,23 @@ export const BurgerMenu = () => {
 	})(SwipeableDrawer);
 
 	return (
-		<div className={burgerClasses.burgerMenu}>
-			{(['left'] as Anchor[]).map((anchor) => (
-				<React.Fragment key={anchor}>
-					<Button className={classes.button} onClick={toggleDrawer(anchor, true)}>{!burgerMode ?
-						<MenuIcon className={classes.icon}/> : <CloseIcon className={classes.icon}/>}</Button>
-					<SwipeableDrawerWithStyles
-						anchor={anchor}
-						open={state[anchor]}
-						onClose={toggleDrawer(anchor, false)}
-						onOpen={toggleDrawer(anchor, true)}
-					>
-						{list(anchor)}
-					</SwipeableDrawerWithStyles>
-				</React.Fragment>
-			))}
+		<div className={burgerClasses.burgerMenuWrapper}>
+			<div className={burgerClasses.burgerMenu}>
+				{(['left'] as Anchor[]).map((anchor) => (
+					<React.Fragment key={anchor}>
+						<Button className={classes.button} onClick={toggleDrawer(anchor, true)}>{!burgerMode ?
+							<MenuIcon className={classes.icon}/> : <CloseIcon className={classes.icon}/>}</Button>
+						<SwipeableDrawerWithStyles
+							anchor={anchor}
+							open={state[anchor]}
+							onClose={toggleDrawer(anchor, false)}
+							onOpen={toggleDrawer(anchor, true)}
+						>
+							{list(anchor)}
+						</SwipeableDrawerWithStyles>
+					</React.Fragment>
+				))}
+			</div>
 		</div>
 	);
 }

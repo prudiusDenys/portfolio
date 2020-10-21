@@ -77,6 +77,15 @@
   }
 }
 
+@media (max-width: $ipadPro) {
+  .mainBlock{
+    .mainBlockContent{
+
+    }
+  }
+
+}
+
 
 @media (max-width: $tablets) {
   .mainBlockContent {

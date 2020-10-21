@@ -3,7 +3,6 @@ import classes from "./Projects.module.scss";
 import styleContainer from '../../common/styles/container/Container.module.scss'
 import {Project} from "./Project/Project";
 import {v1} from "uuid";
-import {Header} from "../Header/Header";
 import {Title} from "../../common/components/Title/Title";
 import counter from '../../assets/images/counter.jpg';
 import social from '../../assets/images/social.jpg';
@@ -31,7 +30,6 @@ export const Projects = () => {
 
 	return (
 		<div className={classes.projects}>
-			<Header/>
 			<div className={styleContainer.container}>
 				<Title title={'My'} titleSpan={'Portfolio'} titleBg={'works'}/>
 				<div className={classes.projectsContent}>

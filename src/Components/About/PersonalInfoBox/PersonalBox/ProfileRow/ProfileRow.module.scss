@@ -50,3 +50,17 @@
     }
   }
 }
+
+@media (max-width: $mobileXXS) {
+  .profileRow {
+    .profileColumn {
+      ul {
+        li {
+          .spanValue {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,6 @@ import {Title} from "../../common/components/Title/Title";
 import {Separator} from "../../common/components/Separator/Separator";
 import {CustomTitle} from "../../common/components/CustomTitle/CustomTitle";
 import {Skills} from "./Skills/Skills";
-import {Header} from "../Header/Header";
 import {Experience} from "./Experience/Experience";
 import {PersonalInfoBox} from "./PersonalInfoBox/PersonalInfoBox";
 
@@ -13,7 +12,6 @@ import {PersonalInfoBox} from "./PersonalInfoBox/PersonalInfoBox";
 export const About = () => {
 	return (
 		<div className={classes.about}>
-			<Header/>
 			<div className={styleContainer.container}>
 				<div className={classes.aboutContent}>
 					<Title title={'ABOUT'} titleSpan={'ME'} titleBg={'RESUME'}/>
