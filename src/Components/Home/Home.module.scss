@@ -77,25 +77,16 @@
   }
 }
 
-@media (max-width: $ipadPro) {
-  .mainBlock{
-    .mainBlockContent{
-
-    }
-  }
-
-}
-
 
 @media (max-width: $tablets) {
   .mainBlockContent {
-    height: 100%;
-    margin-top: 30px;
+    height: auto;
+    flex: 1;
+    flex-direction: column;
+
     .colorBlock {
       display: none;
     }
-
-    flex-direction: column;
 
     .welcomeBlock {
       display: flex;

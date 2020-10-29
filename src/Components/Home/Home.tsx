@@ -9,7 +9,6 @@ const myPhotoStyles = {
 
 export const Home = () => {
 	return (
-		<div className={classes.mainBlock}>
 			<div className={classes.mainBlockContent}>
 				<div className={classes.colorBlock}>
 				</div>
@@ -40,6 +39,5 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
-		</div>
 	)
 }

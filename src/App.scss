@@ -50,4 +50,15 @@ li {
   --app-height: 100%;
 }
 
+
+
+@media (max-width: $tablets) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+}
+
 /* END GLOBAL STYLES */
