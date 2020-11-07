@@ -13,7 +13,6 @@ export const PersonalBox = () => {
 		lastName: 'Prudius',
 		age: '27 Years',
 		nationality: 'Russian',
-		freelance: 'Available',
 		address: 'Moscow',
 		phone: '+393518441020',
 		email: 'prdslife@gmail.com',
@@ -24,7 +23,7 @@ export const PersonalBox = () => {
 	const profileRow = PersonalInfoData.map((p, i) => {
 		return (
 			<ProfileRow key={i} firstName={p.firstName} lastName={p.lastName}
-									age={p.age} nationality={p.nationality} freelance={p.freelance}
+									age={p.age} nationality={p.nationality}
 									address={p.address}
 									phone={p.phone} email={p.email}
 									skype={p.skype} languages={p.languages}/>

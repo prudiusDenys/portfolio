@@ -7,7 +7,7 @@ type PropsType = {
 	lastName: string
 	age: string
 	nationality?: string
-	freelance: string
+	// freelance: string
 	address: string
 	phone: string
 	email: string
@@ -30,15 +30,13 @@ export const ProfileRow = (props: PropsType) => {
 						className={classes.spanValue}>{props.age}</span></li>
 					<li><span className={classes.spanTitle}>Nationality : </span><span
 						className={classes.spanValue}>{props.nationality}</span></li>
-					<li><span className={classes.spanTitle}>Freelance : </span><span
-						className={classes.spanValue}>{props.freelance}</span></li>
+					<li><span className={classes.spanTitle}>Address : </span><span
+						className={classes.spanValue}>{props.address}</span></li>
 				</ul>
 			</div>
 
 			<div className={classes.profileColumn}>
 				<ul>
-					<li><span className={classes.spanTitle}>Address : </span><span
-						className={classes.spanValue}>{props.address}</span></li>
 					<li>
 						<span className={classes.spanTitle}>phone : </span>
 						<span className={classes.spanValue}>

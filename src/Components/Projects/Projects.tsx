@@ -7,6 +7,7 @@ import {Title} from "../../common/components/Title/Title";
 import counter from '../../assets/images/counter.jpg';
 import social from '../../assets/images/social.jpg';
 import todolist from '../../assets/images/todolist.jpg';
+import cards from '../../assets/images/cards.jpg';
 
 
 type ProjectsType = {
@@ -20,10 +21,8 @@ export const Projects = () => {
 	const projects: Array<ProjectsType> = [
 		{id: v1(), image: social, description: "Social Network"},
 		{id: v1(), image: todolist, description: "Todolist"},
-		{id: v1(), image: counter, description: "Counter"},
-		{id: v1(), image: social, description: "CRM"},
-		{id: v1(), image: todolist, description: "Mobile banking"},
-		{id: v1(), image: counter, description: "Website for agency"},
+		{id: v1(), image: cards, description: "Cards"},
+		{id: v1(), image: counter, description: "Personal Account"},
 	]
 
 	const project = projects.map(p => <Project key={p.id} image={p.image} description={p.description}/>)

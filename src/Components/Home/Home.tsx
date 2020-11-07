@@ -9,35 +9,34 @@ const myPhotoStyles = {
 
 export const Home = () => {
 	return (
-			<div className={classes.mainBlockContent}>
-				<div className={classes.colorBlock}>
+		<div className={classes.mainBlockContent}>
+			<div className={classes.colorBlock}>
+			</div>
+			<div className={classes.welcomeBlock}>
+
+				<div className={classes.photo} style={myPhotoStyles}>
+
 				</div>
-				<div className={classes.welcomeBlock}>
-
-					<div className={classes.photo} style={myPhotoStyles}>
-
+				<div className={classes.aboutMe}>
+					<div className={classes.greeting}>
+						<h6>Hi There !</h6>
 					</div>
-					<div className={classes.aboutMe}>
-						<div className={classes.greeting}>
-							<h6>Hi There !</h6>
-						</div>
-						<div className={classes.me}>
-							<h1>I am <span>Denis Prudius</span></h1>
-						</div>
-						<div>
-							<div className={classes.aboutMeInfo}>
-								<p>Frontend Developer. I am constantly developing and studying new technologies in IT. Currently I
-									specialize in React, but also open to other suggestions. Work experience half a year on freelance. I
-									am
-									looking for a job in a dynamically developing company with interesting tasks and career opportunities.
-									I will be glad to mutual cooperation.</p>
-							</div>
-						</div>
-						<Button title={'MORE ABOUT ME'} path={'#/about'}/>
+					<div className={classes.me}>
+						<h1>I am <span>Denis Prudius</span></h1>
 					</div>
 					<div>
+						<div className={classes.aboutMeInfo}>
+							<p>I am a responsible, motivated Front-end developer, constantly developing and studying new technologies
+								in IT. Experience in developing landing pages, SPA using React / Redux, JavaSript, TypeScript, REST API, Material UI,
+								Tests, etc... I have good analytical skills. I learn easily and with pleasure. I quickly find a common
+								language with people.</p>
+						</div>
 					</div>
+					<Button title={'MORE ABOUT ME'} path={'#/about'}/>
+				</div>
+				<div>
 				</div>
 			</div>
+		</div>
 	)
 }

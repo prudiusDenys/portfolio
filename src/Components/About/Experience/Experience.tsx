@@ -16,17 +16,18 @@ export const Experience = () => {
 			},
 			position: 'Frontend Developer',
 			company: 'Freelance',
-			duties: 'I was mainly engaged in adaptive layout of sites using preprocessors and BEM methodology. I developed my own components using React (including hooks) / Redux, TypeScript, and also used Jest tests, Storybook, Snapshot Testing to test components.'
+			duties: "I developed a social network, a todo list, login, a user's personal account, pagination, a card application. Form validation and sending emails to the client's mail. And other projects. Main technologies: React / Redux, Js, Ts, Material UI, REST API, Storybook, SCSS, CSS Modules, GIT."
 		},
 	];
 
-	const experienceItem = experienceData.map(i => <ExperienceItem key={i.id} time={i.time} position={i.position} company={i.company} duties={i.duties}/>)
+	const experienceItem = experienceData.map(i => <ExperienceItem key={i.id} time={i.time} position={i.position}
+																																 company={i.company} duties={i.duties}/>)
 
 	return (
 		<div className={classes.experience}>
-				<div className={classes.experienceContent}>
-						{experienceItem}
-				</div>
+			<div className={classes.experienceContent}>
+				{experienceItem}
+			</div>
 		</div>
 	)
 }

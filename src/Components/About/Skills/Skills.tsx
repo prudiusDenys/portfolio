@@ -4,7 +4,7 @@ import {Skill} from "./Skill/Skill";
 
 export const Skills = () => {
 
-	const skills: Array<string> = ['React', 'Redux', 'JS', 'TS', 'HTML5', 'CSS', 'SASS', 'API']
+	const skills: Array<string> = ['React', 'Redux', 'Redux-toolkit', 'JS6+', 'TS', 'Tests', 'Storybook', 'Snapshot Testing', 'REST API', 'Axios', 'GIT', 'Material UI', 'NPM/Yarn', 'Heroku', 'GULP', 'HTML5 CSS3', 'SCSS', 'CSS Modules', 'BEM', 'FLEX']
 
 	return (
 		<div className={classes.skills}>

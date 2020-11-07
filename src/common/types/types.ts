@@ -14,7 +14,6 @@ export type PersonalInfoDataType = {
 	lastName: string
 	age: string
 	nationality: string
-	freelance: string
 	address: string
 	phone: string
 	email: string
