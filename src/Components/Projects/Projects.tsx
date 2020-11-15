@@ -14,18 +14,19 @@ type ProjectsType = {
 	id: string
 	image: string
 	description: string
+	projectLink: string
 }
 
 export const Projects = () => {
 
 	const projects: Array<ProjectsType> = [
-		{id: v1(), image: social, description: "Social Network"},
-		{id: v1(), image: todolist, description: "Todolist"},
-		{id: v1(), image: cards, description: "Cards"},
-		{id: v1(), image: counter, description: "Personal Account"},
+		{id: v1(), image: social, description: "Social Network", projectLink: 'https://prudiusdenys.github.io/my-social-network-ts/#/profile'},
+		{id: v1(), image: todolist, description: "Todolist", projectLink: ''},
+		{id: v1(), image: cards, description: "Cards", projectLink: ''},
+		{id: v1(), image: counter, description: "Personal Account", projectLink: ''},
 	]
 
-	const project = projects.map(p => <Project key={p.id} image={p.image} description={p.description}/>)
+	const project = projects.map(p => <Project key={p.id} image={p.image} description={p.description} projectLink={p.projectLink} />)
 
 	return (
 		<div className={classes.projects}>

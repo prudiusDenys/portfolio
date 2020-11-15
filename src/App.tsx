@@ -9,7 +9,6 @@ import {BurgerMenu} from "./Components/Header/BurgerMenu/BurgerMenu";
 import {Header} from "./Components/Header/Header";
 
 const App = () => {
-
 	return (
 		<Router>
 			<div className="App">
